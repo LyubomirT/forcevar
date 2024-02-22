@@ -1,0 +1,63 @@
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 50%;
+      margin: 5px 0;
+      padding: 5px;
+      border: none;
+      background-color: #2196f3;
+      color: white;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+    }
+
+    span {
+      flex: 1;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Variable Adder</h1>
+  <div id="add-form">
+    <input id="var-name" type="text" placeholder="Enter variable name">
+    <input id="var-value" type="text" placeholder="Enter variable value">
+    <input id="var-url" type="text" placeholder="Enter domain or URL">
+    <button id="add-button">Add</button>
+  </div>
+  <div id="config-list">
+    <ul id="config-ul"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

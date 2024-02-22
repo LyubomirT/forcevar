@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Variable Adder",
+    "version": "1.0",
+    "description": "An extension that adds a variable to the webpages you set up",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "forcevar-icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
