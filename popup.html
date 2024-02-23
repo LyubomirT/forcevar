@@ -33,11 +33,25 @@
       margin: 5px 0;
       padding: 5px;
       border: none;
-      background-color: #9b59b6; /* Purple accent for button */
+      background-color: none;
+      /* Trick, use a background image to create a gradient effect */
+      background: -moz-linear-gradient(left, #9b59b6 0%, #db7cf8 300%); /* Added gradient effect */
+      background: -webkit-linear-gradient(left, #9b59b6 0%, #db7cf8 300%); /* Added gradient effect */
+      background: -o-linear-gradient(left, #9b59b6 0%, #db7cf8 300%); /* Added gradient effect */
+      background: linear-gradient(to right, #9b59b6 0%, #db7cf8 300%); /* Added gradient effect */
       color: white;
       cursor: pointer;
       border-radius: 4px; /* Added rounded corners */
       font-family: inherit;
+      --webkit-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
+      --moz-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
+      --o-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
+      transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
+
+    }
+
+    button:hover {
+      background-position: -10px;
     }
 
     ul {
