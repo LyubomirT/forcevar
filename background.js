@@ -25,7 +25,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     try {
         urlObj = new URL(url);
     } catch (error) {
-        console.error(error);
         return;
     }
 
