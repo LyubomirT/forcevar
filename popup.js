@@ -39,6 +39,7 @@ function displayConfig() {
     // Create a button for editing the config object
     let editButton = document.createElement("button");
     editButton.textContent = "Edit";
+    editButton.className = "edit-button";
     editButton.addEventListener("click", function() {
       // Fill the input fields with the current values
       varName.value = config[i].name;
@@ -58,6 +59,7 @@ function displayConfig() {
 
     // Create a button for deleting the config object
     let deleteButton = document.createElement("button");
+    deleteButton.className = "delete-button";
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", function() {
       // Remove the current config object from the array

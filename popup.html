@@ -5,11 +5,13 @@
       font-family: Arial, sans-serif;
       margin: 10px;
       width: 400px;
+      background-color: #f5f5f5; /* Slightly gray background */
     }
 
     h1 {
-      font-size: 16px;
+      font-size: 20px; /* Increased font size for title */
       text-align: center;
+      color: #9b59b6; /* Purple accent for title */
     }
 
     input {
@@ -17,6 +19,7 @@
       margin: 5px 0;
       padding: 5px;
       border: 1px solid #ccc;
+      border-radius: 4px; /* Added rounded corners */
     }
 
     button {
@@ -24,14 +27,16 @@
       margin: 5px 0;
       padding: 5px;
       border: none;
-      background-color: #2196f3;
+      background-color: #9b59b6; /* Purple accent for button */
       color: white;
       cursor: pointer;
+      border-radius: 4px; /* Added rounded corners */
     }
 
     ul {
       list-style: none;
       padding: 0;
+      margin-bottom: 10px; /* Added margin for spacing */
     }
 
     li {
@@ -39,11 +44,30 @@
       align-items: center;
       margin: 5px 0;
       border: 1px solid #ccc;
+      border-radius: 4px; /* Added rounded corners */
+      background-color: #fff; /* White background for list items */
     }
 
     span {
       flex: 1;
       padding: 5px;
+    }
+
+    #config-ul {
+      border-top: 1px solid #ccc; /* Added border to top of list */
+    }
+
+    #config-ul li:first-child {
+      border-top: none; /* Remove top border from first list item */
+    }
+
+    .delete-button, .edit-button {
+      padding: 5px 10px;
+      width: 70px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-right: 5px;
     }
   </style>
 </head>
