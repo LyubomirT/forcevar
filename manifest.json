@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Variable Adder",
+    "name": "ForceVar",
     "version": "1.0",
     "description": "An extension that adds a variable to the webpages you set up",
     "action": {
