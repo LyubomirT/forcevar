@@ -156,3 +156,13 @@ function addConfig() {
 
 // Add an event listener to the add button
 addButton.addEventListener("click", addConfig);
+
+// Clear all button
+const clearBtn = document.querySelector("#clear-button");
+
+//add event listener to clear all button
+clearBtn.addEventListener("click", function () {
+  varName.value = '';
+  varValue.value = '';
+  varUrl.value = '';
+});
