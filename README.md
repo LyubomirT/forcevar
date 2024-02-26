@@ -66,7 +66,6 @@ If you've found a bug, please report it in the [Issues](https://github.com/Lyubo
 
 We're planning to add a lot of features to ForceVar, including but not limited to:
 
-- Support for Firefox and other non-Chromium browsers
 - A more customizable interface
 - A way to export and import your configurations
 - Kind of a "dark mode" for the extension
