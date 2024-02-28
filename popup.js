@@ -4,6 +4,7 @@ const varValue = document.getElementById("var-value");
 const varUrl = document.getElementById("var-url");
 const addButton = document.getElementById("add-button");
 const configUl = document.getElementById("config-ul");
+const clearAllButton = document.getElementById("clear-all-button");
 
 // Load the existing config from the global storage
 let config = [];
@@ -156,3 +157,15 @@ function addConfig() {
 
 // Add an event listener to the add button
 addButton.addEventListener("click", addConfig);
+
+// Add an event listener to the clear all button
+clearAllButton.addEventListener("click", function() {
+  // Clear the config array
+  config = [];
+
+  // Save the updated config to the global storage
+  chrome.storage.local.set({ config: config });
+
+  // Display the updated config in the popup
+  displayConfig();
+});
