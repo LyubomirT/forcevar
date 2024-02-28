@@ -97,7 +97,8 @@
     }
 
     #clear-all-button {
-      margin: 10px 0;
+      width: 100%;
+      padding: 10px;
       border: none;
       background-color: #e74c3c; /* Red background color */
       color: white;
@@ -108,7 +109,6 @@
       --moz-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
       --o-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
       transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Added transition effect */
-      float: right;
     }
   </style>
 </head>
@@ -123,7 +123,7 @@
   <div id="config-list">
     <ul id="config-ul"></ul>
   </div>
-  <button id="clear-all-button">Clear All</button>
+  <button id="clear-all-button" hidden>Clear All</button>
   <script src="popup.js"></script>
 </body>
 </html>
