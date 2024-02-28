@@ -77,6 +77,13 @@ function displayConfig() {
     // Append the list item to the unordered list
     configUl.appendChild(li);
   }
+
+  // Show or hide the clear all button based on the number of items displayed
+  if (config.length > 0) {
+    clearAllButton.removeAttribute("hidden");
+  } else {
+    clearAllButton.setAttribute("hidden", true);
+  }
 }
 
 // List of disallowed characters in a URL query variable
